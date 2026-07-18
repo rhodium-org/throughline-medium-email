@@ -1,0 +1,11 @@
+uid: SR-0006
+type: system_requirement
+status: approved
+title: "Do not rely on an image or button alone for the action"
+text: "Because images may be blocked, make links work as text and never place the only call to action inside an image or image-based button."
+links:
+- target: UR-0003
+  type: implements
+attrs:
+  source_ref: "TBS Medium — Email — Navigation and actions"
+  principle: UR-0003

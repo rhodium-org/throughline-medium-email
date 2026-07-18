@@ -1,0 +1,10 @@
+uid: UR-0005
+type: user_requirement
+status: approved
+title: "Present the email to render everywhere"
+text: "Email clients render inconsistently and may block images, so keep the layout simple and robust and do not depend on images or rich formatting."
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  source_ref: "TBS Medium — Email — Presentation and formatting"

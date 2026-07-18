@@ -1,0 +1,11 @@
+uid: SR-0005
+type: system_requirement
+status: approved
+title: "Offer one clear call to action as a text link"
+text: "Give the reader one obvious next step as a descriptive text link, not several competing links, so the action is clear at a glance."
+links:
+- target: UR-0003
+  type: implements
+attrs:
+  source_ref: "TBS Medium — Email — Navigation and actions"
+  principle: UR-0003

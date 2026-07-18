@@ -1,0 +1,10 @@
+uid: UR-0003
+type: user_requirement
+status: approved
+title: "Point and prompt with the inbox's live affordances"
+text: "An email can carry links and a button but may be read with images off; give one clear call to action as a descriptive text link."
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  source_ref: "TBS Medium — Email — Navigation and actions"

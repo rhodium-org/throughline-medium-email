@@ -1,0 +1,10 @@
+uid: UR-0002
+type: user_requirement
+status: approved
+title: "Keep the email short and to a single purpose"
+text: "An email competes with a full inbox and is read quickly, so keep it brief, focused on one purpose, and easy to skim."
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  source_ref: "TBS Medium — Email — Length and density"

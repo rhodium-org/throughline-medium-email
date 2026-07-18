@@ -1,0 +1,11 @@
+uid: SR-0007
+type: system_requirement
+status: approved
+title: "Write a specific, informative subject line"
+text: "Give the email a subject line that says what it is about and why it matters, so the reader can tell from the inbox whether and when to open it; do not leave it vague or blank."
+links:
+- target: UR-0004
+  type: implements
+attrs:
+  source_ref: "TBS Medium — Email — Opening and closing"
+  principle: UR-0004

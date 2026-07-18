@@ -1,0 +1,11 @@
+uid: SR-0010
+type: system_requirement
+status: approved
+title: "Keep formatting simple so it renders across clients"
+text: "Keep the layout simple and robust — a single column, standard fonts, no reliance on advanced styling — so the email renders consistently across email clients and on a phone."
+links:
+- target: UR-0005
+  type: implements
+attrs:
+  source_ref: "TBS Medium — Email — Presentation and formatting"
+  principle: UR-0005

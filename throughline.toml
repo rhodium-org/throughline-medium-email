@@ -1,0 +1,73 @@
+[project]
+name = "Medium — Email (throughline source)"
+format_version = 2
+
+# A throughline *source*: a standalone graph a consuming project composes via
+# throughline-compose, importing it under a namespace (e.g. `medium`) and referencing
+# principles as `medium:UR-0001` or rules as `medium:SR-0001`. The UIDs here are this
+# source's own and immutable; the channel + dimension reference lives in
+# `attrs.source_ref`, never in the UID.
+#
+# This is the *medium / channel* axis — how the delivery CHANNEL shapes the content
+# (structure, length, navigation, framing, presentation) — for ONE channel: an EMAIL,
+# read in a crowded inbox, often on a phone and in a narrow preview pane, skimmed rather
+# than read, judged from its From name and subject line before it is opened, carrying
+# live links and possibly read with images turned off. It deliberately says nothing about
+# universal readability, spelling, tone/register, purpose or audience; each of those is
+# its own throughline source. Channels are MUTUALLY EXCLUSIVE: web, letter, email, SMS
+# and print are SIBLING sources and a consumer composes exactly one under the `medium`
+# namespace (swapping channel is a one-line `url`/`ref` change). Mixing channels would
+# merge rules written for different delivery constraints, so they are never combined.
+#
+# Email sits between its siblings: like a LETTER it is addressed correspondence with a
+# greeting and a sign-off, but like a WEB page it carries live links and one clear call
+# to action, and unlike a postal letter it has no address block. The axis owns only what
+# the channel imposes. Whether there is a sign-off is a medium decision (an email and a
+# letter have one, a web page does not); the register of that sign-off is a tone
+# decision. Sentence-level clarity is the readability axis; how much prior knowledge to
+# assume is the audience axis. The medium axis sits alongside them and a consumer
+# composes all it needs.
+#
+# The rules are Time Back Solutions' own house content guidance, licensed under
+# Apache-2.0; nothing here reproduces a third-party standard. Each principle is a
+# `user_requirement`; each concrete rule is a `system_requirement` that `implements`
+# its principle.
+
+[grounding]
+root_types = ["intent"]
+delivery_roots = ["intent"]
+ground_link_types = ["derives_from", "implements"]
+ai_origins = ["ai", "hybrid"]
+
+[types.user_requirement]
+attrs.source_ref = { required = true }
+
+[types.system_requirement]
+attrs.source_ref = { required = true }
+
+[links]
+types = ["derives_from", "implements", "relates"]
+
+[link_rules]
+derives_from = { from = ["user_requirement"], to = ["intent"] }
+implements   = { from = ["system_requirement"], to = ["user_requirement"] }
+
+[status]
+values = ["proposed", "draft", "deferred", "approved", "ratified", "implemented",
+          "verified", "suspect", "rejected", "deleted"]
+
+[transitions]
+proposed    = ["draft", "approved", "ratified", "deferred", "rejected", "deleted"]
+draft       = ["approved", "deferred", "rejected", "deleted"]
+deferred    = ["draft", "approved", "rejected", "deleted"]
+approved    = ["ratified", "implemented", "deferred", "suspect", "rejected", "deleted"]
+ratified    = ["implemented", "suspect", "rejected", "deleted"]
+implemented = ["verified", "suspect", "rejected", "deleted"]
+verified    = ["implemented", "suspect", "deleted"]
+suspect     = ["approved", "ratified", "implemented", "verified", "rejected", "deleted"]
+rejected    = ["draft", "deleted"]
+
+# `tl docs` regenerates docs/spec.md + README.md from the graph; `tl docs --check`
+# gates them so the published counts and tables can never drift.
+[docs]
+paths = ["docs/*.md", "README.md"]

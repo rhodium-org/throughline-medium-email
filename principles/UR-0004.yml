@@ -1,0 +1,10 @@
+uid: UR-0004
+type: user_requirement
+status: approved
+title: "Frame the email with its subject, greeting and sign-off"
+text: "An email is framed by a From name, a subject line, a greeting and a sign-off, but no postal address block; give it that framing so it reads as addressed correspondence."
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  source_ref: "TBS Medium — Email — Opening and closing"

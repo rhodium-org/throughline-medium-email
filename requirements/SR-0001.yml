@@ -1,0 +1,11 @@
+uid: SR-0001
+type: system_requirement
+status: approved
+title: "Put the main point and any action in the first line"
+text: "Open with the point of the email and what you want the reader to do, so someone who sees only the preview pane still gets the essentials."
+links:
+- target: UR-0001
+  type: implements
+attrs:
+  source_ref: "TBS Medium — Email — Structure for the channel"
+  principle: UR-0001

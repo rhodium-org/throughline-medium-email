@@ -1,0 +1,8 @@
+uid: INT-0001
+type: intent
+status: approved
+title: "Text is delivered as an email"
+text: "An email lands in a crowded inbox, is often read on a phone in a narrow preview pane, and is judged from its From name and subject line before it is opened. The reader skims it, may read it with images turned off, can click links and expects a greeting and a sign-off but no postal address block. This axis governs how delivery is shaped for that channel — structure, length, navigation, framing and presentation — not universal readability, spelling, register, purpose or audience, each of which is a separate source. Channels are mutually exclusive: a consumer composes exactly one of the web, letter, email, SMS or print sibling sources."
+normative: false
+attrs:
+  source_ref: "TBS Medium — Email"

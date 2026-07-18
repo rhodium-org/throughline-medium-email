@@ -1,0 +1,11 @@
+uid: SR-0008
+type: system_requirement
+status: approved
+title: "Open with a greeting and close with a sign-off, without an address block"
+text: "Open with a greeting to the reader and close with a sign-off and the sender's name, but do not include a postal address block; an email is addressed correspondence framed more lightly than a letter. Whether the greeting and sign-off exist is a channel decision; their register is set by the tone axis, not here."
+links:
+- target: UR-0004
+  type: implements
+attrs:
+  source_ref: "TBS Medium — Email — Opening and closing"
+  principle: UR-0004

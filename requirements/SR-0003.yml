@@ -1,0 +1,11 @@
+uid: SR-0003
+type: system_requirement
+status: approved
+title: "Keep the email to a single purpose"
+text: "Give the email one main purpose or ask; if there is a second unrelated matter, send a separate email rather than burying it."
+links:
+- target: UR-0002
+  type: implements
+attrs:
+  source_ref: "TBS Medium — Email — Length and density"
+  principle: UR-0002

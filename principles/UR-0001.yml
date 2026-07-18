@@ -1,0 +1,10 @@
+uid: UR-0001
+type: user_requirement
+status: approved
+title: "Structure the email so the point survives a skim"
+text: "An email is skimmed in a crowded inbox, often in a narrow preview pane; lead with the point and let the rest follow so it reads top to bottom."
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  source_ref: "TBS Medium — Email — Structure for the channel"

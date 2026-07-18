@@ -1,0 +1,11 @@
+uid: SR-0009
+type: system_requirement
+status: approved
+title: "Make sure the email still makes sense with images off"
+text: "Ensure the message reads and the action still works when images are turned off; put essential content in text, not in an image."
+links:
+- target: UR-0005
+  type: implements
+attrs:
+  source_ref: "TBS Medium — Email — Presentation and formatting"
+  principle: UR-0005
