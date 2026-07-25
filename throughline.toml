@@ -28,7 +28,7 @@ format_version = 3
 # assume is the audience axis. The medium axis sits alongside them and a consumer
 # composes all it needs.
 #
-# The rules are Time Back Solutions' own house content guidance, licensed under
+# The rules are original house content guidance, licensed under
 # Apache-2.0; nothing here reproduces a third-party standard. Each principle is a
 # `user_requirement`; each concrete rule is a `system_requirement` that `implements`
 # its principle.
