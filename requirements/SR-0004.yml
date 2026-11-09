@@ -1,11 +1,13 @@
 uid: SR-0004
 type: system_requirement
-status: approved
-title: "Keep it short and skimmable with brief paragraphs"
-text: "Keep the email brief and break the body into short paragraphs, using a short list where it helps, so the reader can skim it in the inbox."
+status: proposed
+title: Keep it short and skimmable with brief paragraphs
+text: Keep the email brief and break the body into short paragraphs, using a short
+  list where it helps, so the reader can skim it in the inbox.
+normative: true
 links:
 - target: UR-0002
   type: implements
 attrs:
-  source_ref: "TBS Medium — Email — Length and density"
+  source_ref: TBS Medium — Email — Length and density
   principle: UR-0002
