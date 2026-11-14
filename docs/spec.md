@@ -30,7 +30,7 @@ It carries
 ## Purpose
 
 <!-- tl:item INT-0001 -->
-**INT-0001 — Text is delivered as an email** — `intent`, status `approved`
+**INT-0001 — Text is delivered as an email** — `intent`, status `proposed`
 
 > An email lands in a crowded inbox, is often read on a phone in a narrow preview pane, and is judged from its From name and subject line before it is opened. The reader skims it, may read it with images turned off, can click links and expects a greeting and a sign-off but no postal address block. This axis governs how delivery is shaped for that channel — structure, length, navigation, framing and presentation — not universal readability, spelling, register, purpose or audience, each of which is a separate source. Channels are mutually exclusive: a consumer composes exactly one of the web, letter, email, SMS or print sibling sources.
 
@@ -40,7 +40,7 @@ It carries
 ## 1. Structure the email so the point survives a skim
 
 <!-- tl:item UR-0001 -->
-**UR-0001 — Structure the email so the point survives a skim** — `user_requirement`, status `approved`
+**UR-0001 — Structure the email so the point survives a skim** — `user_requirement`, status `proposed`
 
 > An email is skimmed in a crowded inbox, often in a narrow preview pane; lead with the point and let the rest follow so it reads top to bottom.
 
@@ -52,14 +52,14 @@ It carries
 <!-- tl:table attrs.get('principle') == 'UR-0001' -->
 | UID | Type | Status | Title |
 |---|---|---|---|
-| SR-0001 | system_requirement | approved | Put the main point and any action in the first line |
-| SR-0002 | system_requirement | approved | Order the email as a single top-to-bottom read |
+| SR-0001 | system_requirement | proposed | Put the main point and any action in the first line |
+| SR-0002 | system_requirement | proposed | Order the email as a single top-to-bottom read |
 <!-- tl:end -->
 
 ## 2. Keep the email short and to a single purpose
 
 <!-- tl:item UR-0002 -->
-**UR-0002 — Keep the email short and to a single purpose** — `user_requirement`, status `approved`
+**UR-0002 — Keep the email short and to a single purpose** — `user_requirement`, status `proposed`
 
 > An email competes with a full inbox and is read quickly, so keep it brief, focused on one purpose, and easy to skim.
 
@@ -71,14 +71,14 @@ It carries
 <!-- tl:table attrs.get('principle') == 'UR-0002' -->
 | UID | Type | Status | Title |
 |---|---|---|---|
-| SR-0003 | system_requirement | approved | Keep the email to a single purpose |
-| SR-0004 | system_requirement | approved | Keep it short and skimmable with brief paragraphs |
+| SR-0003 | system_requirement | proposed | Keep the email to a single purpose |
+| SR-0004 | system_requirement | proposed | Keep it short and skimmable with brief paragraphs |
 <!-- tl:end -->
 
 ## 3. Point and prompt with the inbox's live affordances
 
 <!-- tl:item UR-0003 -->
-**UR-0003 — Point and prompt with the inbox's live affordances** — `user_requirement`, status `approved`
+**UR-0003 — Point and prompt with the inbox's live affordances** — `user_requirement`, status `proposed`
 
 > An email can carry links and a button but may be read with images off; give one clear call to action as a descriptive text link.
 
@@ -90,14 +90,14 @@ It carries
 <!-- tl:table attrs.get('principle') == 'UR-0003' -->
 | UID | Type | Status | Title |
 |---|---|---|---|
-| SR-0005 | system_requirement | approved | Offer one clear call to action as a text link |
-| SR-0006 | system_requirement | approved | Do not rely on an image or button alone for the action |
+| SR-0005 | system_requirement | proposed | Offer one clear call to action as a text link |
+| SR-0006 | system_requirement | proposed | Do not rely on an image or button alone for the action |
 <!-- tl:end -->
 
 ## 4. Frame the email with its subject, greeting and sign-off
 
 <!-- tl:item UR-0004 -->
-**UR-0004 — Frame the email with its subject, greeting and sign-off** — `user_requirement`, status `approved`
+**UR-0004 — Frame the email with its subject, greeting and sign-off** — `user_requirement`, status `proposed`
 
 > An email is framed by a From name, a subject line, a greeting and a sign-off, but no postal address block; give it that framing so it reads as addressed correspondence.
 
@@ -109,14 +109,14 @@ It carries
 <!-- tl:table attrs.get('principle') == 'UR-0004' -->
 | UID | Type | Status | Title |
 |---|---|---|---|
-| SR-0007 | system_requirement | approved | Write a specific, informative subject line |
-| SR-0008 | system_requirement | approved | Open with a greeting and close with a sign-off, without an address block |
+| SR-0007 | system_requirement | proposed | Write a specific, informative subject line |
+| SR-0008 | system_requirement | proposed | Open with a greeting and close with a sign-off, without an address block |
 <!-- tl:end -->
 
 ## 5. Present the email to render everywhere
 
 <!-- tl:item UR-0005 -->
-**UR-0005 — Present the email to render everywhere** — `user_requirement`, status `approved`
+**UR-0005 — Present the email to render everywhere** — `user_requirement`, status `proposed`
 
 > Email clients render inconsistently and may block images, so keep the layout simple and robust and do not depend on images or rich formatting.
 
@@ -128,6 +128,6 @@ It carries
 <!-- tl:table attrs.get('principle') == 'UR-0005' -->
 | UID | Type | Status | Title |
 |---|---|---|---|
-| SR-0009 | system_requirement | approved | Make sure the email still makes sense with images off |
-| SR-0010 | system_requirement | approved | Keep formatting simple so it renders across clients |
+| SR-0009 | system_requirement | proposed | Make sure the email still makes sense with images off |
+| SR-0010 | system_requirement | proposed | Keep formatting simple so it renders across clients |
 <!-- tl:end -->
